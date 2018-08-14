@@ -1,21 +1,71 @@
+/* latin */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6Mk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v7/6xKtdSZaM9iE8KbpRA_hK1QN.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*Universal Styles*/
+html {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  background-color: #fff;
+}
+
 body {
-  width: 80%;
+  line-height: 1.4em;
+}
+
+.container {
+  max-width: 1024px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 960px) {
   font-size: 16px;
-  background-color: white;
 }
 
-header {
-  background-image: url("resources/images/aerial_shot_truro.jpg");
+h1,
+h3 {
+  font-family: 'Pacifico', cursive, serif;
+  font-weight: bold;
+}
+
+/*Banner*/
+.banner {
+  background: url("../images/magumafalls.jpg");
   background-repeat: no-repeat;
-  width: 100%
+  background-position: center;
+  background-size: cover;
+  height: 25em;
 }
 
-header h1 {
-  font-size: 2em;
-  color: purple;
-  width: auto;
-  text-align: center;
-  background: rgba(192, 192, 192, .2);
-  border: 3px solid black;
+.headline {
+  background-color: rgba(0, 0, 0, .2);
+  color: white;
+  width: 23em;
+  padding: 2em 3em;
+  position: relative;
+  top: 9em;
+}
+
+.headline h1 {
+  font-size: 2.5em;
+  line-height: 1.2em;
+  margin: 0.25em 0;
+}
+
+.headline h4 {
+  font-size: 1.75em
 }
