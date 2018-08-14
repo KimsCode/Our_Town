@@ -28,15 +28,16 @@ body {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1024px) {
   font-size: 16px;
 }
 
 h1,
+h2,
 h3 {
   font-family: 'Pacifico', cursive, serif;
   font-weight: bold;
@@ -53,7 +54,7 @@ h3 {
 
 .headline {
   background-color: rgba(0, 0, 0, .2);
-  color: white;
+  color: #fff;
   width: 23em;
   padding: 2em 3em;
   position: relative;
@@ -66,6 +67,54 @@ h3 {
   margin: 0.25em 0;
 }
 
-.headline h4 {
-  font-size: 1.75em
+.headline h3 {
+  font-size: 1.25em
+}
+
+/*Navigation Menu*/
+nav {
+  background-color: #000;
+}
+
+nav ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75em 0;
+  list-style: none;
+}
+
+nav ul li a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  font-family: 'Pacifico', cursive, serif;
+}
+
+/*Topics section*/
+
+.container.topics {
+  display: flex;
+  border: 2px solid #000;
+  border-radius: 50px 20px;
+  padding: .5em;
+}
+
+.topics img {
+  width: 40%;
+  height: auto;
+}
+
+.topics h2 {
+  font-size: 1.5em;
+}
+
+.topics.left {
+
+}
+
+.topics.right {
+
 }
